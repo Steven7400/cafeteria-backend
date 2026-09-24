@@ -1,0 +1,6 @@
+-- ELIMINAR creación manual de base de datos (Aiven asigna la suya pordefecto):
+-- CREATE DATABASE cafeteria;
+-- USE cafeteria;
+-- ELIMINAR la cláusula DEFINER en Triggers o Procedimientos si existen:
+-- DEFINER=`root`@`localhost`
+-- Guardar los cambios en el archivo: script_cafeteria_limpio.sql
