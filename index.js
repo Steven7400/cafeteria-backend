@@ -84,3 +84,8 @@ fetch(`${import.meta.env.VITE_API_URL}/`)
 
 // ✅ Correcto (llama al endpoint real):
 fetch(`${import.meta.env.VITE_API_URL}/api/productos`)
+
+// ✅ En tu código debe quedar así:
+fetch(`${import.meta.env.VITE_API_URL}/api/productos`)
+  .then(res => res.json())
+  .then(data => console.log(data));
