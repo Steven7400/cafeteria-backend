@@ -78,14 +78,3 @@ err ? res.status(500).send(err) : res.send({ message: `Venta con ID ${id} elimin
 app.listen(PORT, () => {
 console.log(`Servidor Express corriendo en puerto ${PORT}`);
 });
-
-// ❌ Incorrecto (provoca el error 404 de la captura):
-fetch(`${import.meta.env.VITE_API_URL}/`)
-
-// ✅ Correcto (llama al endpoint real):
-fetch(`${import.meta.env.VITE_API_URL}/api/productos`)
-
-// ✅ En tu código debe quedar así:
-fetch(`${import.meta.env.VITE_API_URL}/api/productos`)
-  .then(res => res.json())
-  .then(data => console.log(data));
