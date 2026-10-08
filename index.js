@@ -80,21 +80,3 @@ console.log(`Servidor Express corriendo en puerto ${PORT}`);
 });
 
 
-// Dentro de index.js
-
-const estudiantes = [
-  { id: 1, nombre: 'Juan Pérez' },
-  { id: 2, nombre: 'María López' }
-];
-
-const productos = [
-  { id: 1, nombre: 'Café', precio: 1.50 },
-  { id: 2, nombre: 'Empanada', precio: 1.00 }
-];
-
-const ventas = [];
-
-// Rutas respondiendo con esos arreglos:
-app.get('/estudiantes', (req, res) => res.json(estudiantes));
-app.get('/productos', (req, res) => res.json(productos));
-app.get('/ventas', (req, res) => res.json(ventas));
